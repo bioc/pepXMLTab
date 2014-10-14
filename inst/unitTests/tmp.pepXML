@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<msms_pipeline_analysis date="2013-07-26T15:11:41" summary_xml="mam_121007n_RKO_200ug_IEF_A01.pepXML" xmlns="http://regis-web.systemsbiology.net/pepXML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://sashimi.sourceforge.net/schema_revision/pepXML/pepXML_v117.xsd">
+  <analysis_summary analysis="MyriMatch" version="2.1.102" time="2013-07-26T15:11:41"/>
+  <msms_run_summary base_name="mam_121007n_RKO_200ug_IEF_A01" raw_data_type="" raw_data="">
+    <sample_enzyme name="Trypsin" independent="false" fidelity="specific">
+      <specificity sense="C" cut="KR" no_cut="P" min_spacing="1"/>
+    </sample_enzyme>
+    <search_summary base_name="mam_121007n_RKO_200ug_IEF_A01" search_engine="MyriMatch" precursor_mass_type="monoisotopic" fragment_mass_type="monoisotopic" out_data_type="" out_data="">
+      <search_database local_path="/data/ric/ric_collab1/ref/refseq/refseq_pro_jan6-reverse.fasta" database_name="SDB" type="AA"/>
+      <enzymatic_search_constraint enzyme="Trypsin" max_num_internal_cleavages="100000" min_number_termini="2"/>
+      <aminoacid_modification aminoacid="M" massdiff="15.9949" mass="147.0353846062" variable="Y" description="Oxidation"/>
+      <aminoacid_modification aminoacid="Q" massdiff="-17.026" mass="111.0325775114" peptide_terminus="n" variable="Y" description="Gln-&gt;pyro-Glu"/>
+      <aminoacid_modification aminoacid="C" massdiff="57.021464" mass="160.0306484778" variable="N" description="Carbamidomethyl"/>
+      <parameter name="Config: AvgPrecursorMzTolerance" value="1.5mz"/>
+      <parameter name="Config: ClassSizeMultiplier" value="2"/>
+      <parameter name="Config: CleavageRules" value="trypsin"/>
+      <parameter name="Config: ComputeXCorr" value="1"/>
+      <parameter name="Config: DecoyPrefix" value="rev_"/>
+      <parameter name="Config: DynamicMods" value="M ^ 15.9949 (Q * -17.026"/>
+      <parameter name="Config: EstimateSearchTimeOnly" value="0"/>
+      <parameter name="Config: FragmentMzTolerance" value="0.5mz"/>
+      <parameter name="Config: FragmentationAutoRule" value="1"/>
+      <parameter name="Config: FragmentationRule" value="cid"/>
+      <parameter name="Config: MaxDynamicMods" value="2"/>
+      <parameter name="Config: MaxFragmentChargeState" value="0"/>
+      <parameter name="Config: MaxMissedCleavages" value="100000"/>
+      <parameter name="Config: MaxPeakCount" value="300"/>
+      <parameter name="Config: MaxPeptideLength" value="75"/>
+      <parameter name="Config: MaxPeptideMass" value="10000"/>
+      <parameter name="Config: MaxPeptideVariants" value="1000000"/>
+      <parameter name="Config: MaxResultRank" value="2"/>
+      <parameter name="Config: MinPeptideLength" value="5"/>
+      <parameter name="Config: MinPeptideMass" value="0"/>
+      <parameter name="Config: MinResultScore" value="9.9999999999999995e-08"/>
+      <parameter name="Config: MinTerminiCleavages" value="2"/>
+      <parameter name="Config: MonoPrecursorMzTolerance" value="10ppm"/>
+      <parameter name="Config: MonoisotopeAdjustmentSet" value="[-1,2] "/>
+      <parameter name="Config: NumBatches" value="50"/>
+      <parameter name="Config: NumChargeStates" value="3"/>
+      <parameter name="Config: NumIntensityClasses" value="3"/>
+      <parameter name="Config: NumMzFidelityClasses" value="3"/>
+      <parameter name="Config: OutputFormat" value="pepXML"/>
+      <parameter name="Config: OutputSuffix" value=""/>
+      <parameter name="Config: PrecursorMzToleranceRule" value="mono"/>
+      <parameter name="Config: PreferIntenseComplements" value="1"/>
+      <parameter name="Config: ProteinDatabase" value="/data/ric/ric_collab1/ref/refseq/refseq_pro_jan6-reverse.fasta"/>
+      <parameter name="Config: ProteinListFilters" value=""/>
+      <parameter name="Config: ProteinSamplingTime" value="15"/>
+      <parameter name="Config: ResultsPerBatch" value="200000"/>
+      <parameter name="Config: SpectrumListFilters" value="peakPicking true 2-"/>
+      <parameter name="Config: StaticMods" value="C 57.021464"/>
+      <parameter name="Config: StatusUpdateFrequency" value="1800"/>
+      <parameter name="Config: TicCutoffPercentage" value="0.97999999999999998"/>
+      <parameter name="Config: UseMultipleProcessors" value="1"/>
+      <parameter name="Config: UseSmartPlusThreeModel" value="1"/>
+      <parameter name="Config: WorkingDirectory" value="/gpfs21/scratch/wangx15/4weicaochun/proteomics/s1/normal"/>
+      <parameter name="PeakCounts: 1stQuartile: Filtered" value="49"/>
+      <parameter name="PeakCounts: 1stQuartile: Original" value="74"/>
+      <parameter name="PeakCounts: 2ndQuartile: Filtered" value="80"/>
+      <parameter name="PeakCounts: 2ndQuartile: Original" value="112"/>
+      <parameter name="PeakCounts: 3rdQuartile: Filtered" value="126"/>
+      <parameter name="PeakCounts: 3rdQuartile: Original" value="162"/>
+      <parameter name="PeakCounts: Mean: Filtered" value="94"/>
+      <parameter name="PeakCounts: Mean: Original" value="127"/>
+      <parameter name="PeakCounts: Min/Max: Filtered" value="7 / 300"/>
+      <parameter name="PeakCounts: Min/Max: Original" value="7 / 708"/>
+      <parameter name="SearchEngine: Name" value="MyriMatch"/>
+      <parameter name="SearchEngine: Version" value="2.1.102"/>
+      <parameter name="SearchStats: Nodes" value="1"/>
+      <parameter name="SearchStats: Overall" value="67640 proteins; 32805677 peptides; 41073261 variants; 10240782 comparisons"/>
+      <parameter name="SearchTime: Duration" value="474.209351 seconds"/>
+      <parameter name="SearchTime: Started" value="15:03:47 on 07/26/2013"/>
+      <parameter name="SearchTime: Stopped" value="15:11:41 on 07/26/2013"/>
+    </search_summary>
+  </msms_run_summary>
+</msms_pipeline_analysis>
