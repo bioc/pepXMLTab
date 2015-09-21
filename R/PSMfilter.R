@@ -52,9 +52,9 @@ PSMfilter <- function(PSMtab, pepFDR=0.01, scorecolumn='mvh', hitrank=1,
         cut1 <- grep('[KR-]', PSMtab[, 'peptide_prev_aa'], fixed=FALSE)
         NTT[cut1] <- 1
         cut2 <- union(grep('[KR]', 
-                substring(PSMtab[, 'peptide'], nchar(PSMtab[, 'peptide'])-1, 
-                nchar(PSMtab[, 'peptide'])), fixed=FALSE),
-                grep('-', PSMtab[, 'peptide_next_aa'], fixed=FALSE))
+                    substring(PSMtab[, 'peptide'], nchar(PSMtab[, 'peptide'])), 
+                    fixed=FALSE),
+                grep('-', PSMtab[, 'peptide_next_aa'], fixed=TRUE))
         NTT[cut2] <- 1
         NTT[intersect(cut1, cut2)] <- 2
         PSMtab <- cbind(PSMtab, NTT)
