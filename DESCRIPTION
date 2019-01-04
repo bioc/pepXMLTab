@@ -1,7 +1,7 @@
 Package: pepXMLTab
 Type: Package
 Title: Parsing pepXML files and filter based on peptide FDR.
-Version: 1.17.0
+Version: 1.17.1
 Date: 2015-09-20
 Author: Xiaojing Wang
 Maintainer: Xiaojing Wang <xiaojing.wang@vanderbilt.edu>
@@ -14,4 +14,4 @@ License: Artistic-2.0
 Depends: R (>= 3.0.1)
 Imports: XML(>= 3.98-1.1)
 Suggests: RUnit, BiocGenerics
-biocViews: Proteomics, MassSpectrometry
+biocViews: ImmunoOncology, Proteomics, MassSpectrometry
