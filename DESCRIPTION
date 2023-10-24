@@ -1,7 +1,7 @@
 Package: pepXMLTab
 Type: Package
 Title: Parsing pepXML files and filter based on peptide FDR.
-Version: 1.35.0
+Version: 1.36.0
 Date: 2015-09-20
 Author: Xiaojing Wang
 Maintainer: Xiaojing Wang <xiaojing.wang@vanderbilt.edu>
